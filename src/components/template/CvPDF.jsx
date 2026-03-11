@@ -77,6 +77,12 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginTop: 3,
   },
+  Link: {
+    paddingLeft: 8,
+  },
+  Text: {
+    paddingLeft: 3,
+  },
 });
 
 export const CvPDF = () => (
@@ -93,16 +99,19 @@ export const CvPDF = () => (
           <Link src="mailto:jairo_251180@hotmail.com">
             jairo_251180@hotmail.com
           </Link>
-          <Text> • 3206515236 • Colombia | Remoto • </Text>
+          <Text style={styles.Text}> • 3206515236 • Colombia | Remoto • </Text>
           <Link src="https://portafolio-react-rose.vercel.app/">
             Portafolio Web
+          </Link>
+          <Link style={styles.Link} src="https://cv-jairo.vercel.app/">
+            CV Web
           </Link>
         </View>
       </View>
 
       {/* STACK TÉCNICO - MÁS VISUAL */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Habilidades Técnicas</Text>
+        <Text style={styles.sectionTitle}> Habilidades Técnicas</Text>
 
         <View style={styles.skillGroup}>
           <Text style={styles.skillTitle}>Frontend:</Text>
@@ -122,14 +131,14 @@ export const CvPDF = () => (
 
       {/* IDIOMAS */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Idiomas</Text>
+        <Text style={styles.sectionTitle}> Idiomas</Text>
         <Text>Español: Nativo</Text>
         <Text>Inglés: A2</Text>
       </View>
 
       {/* PERFIL PROFESIONAL */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Perfil Profesional</Text>
+        <Text style={styles.sectionTitle}> Perfil Profesional</Text>
         <Text>
           Ingeniero de Sistemas enfocado en desarrollo de aplicaciones web
           modernas con React y Vite. Experiencia construyendo interfaces
@@ -141,7 +150,7 @@ export const CvPDF = () => (
 
       {/* PROYECTOS DESTACADOS */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Proyectos Destacados</Text>
+        <Text style={styles.sectionTitle}> Proyectos Destacados</Text>
 
         <View style={styles.project}>
           <Text style={{ fontWeight: "bold" }}>App Control de Gastos</Text>
@@ -179,7 +188,7 @@ export const CvPDF = () => (
 
       {/* EXPERIENCIA */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Experiencia Laboral</Text>
+        <Text style={styles.sectionTitle}> Experiencia Laboral</Text>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <Text style={{ fontWeight: "bold" }}>
             Desarrollador Web Freelance
